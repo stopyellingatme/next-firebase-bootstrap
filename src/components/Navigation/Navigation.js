@@ -8,7 +8,7 @@ import SignOutButton from '../SignOut';
 let NavigationAuth = () => (
   <ul className="nav">
     <li className="nav-item"><Link href={routes.LANDING}><a className="nav-link">Landing</a></Link></li>
-    <li className="nav-item"><Link href={routes.HOME}><a className="nav-link">Home</a></Link></li>
+    <li className="nav-item"><Link href={routes.HOME}><a className="nav-link">Dashboard</a></Link></li>
     <li className="nav-item"><Link href={routes.ACCOUNT}><a className="nav-link">Account</a></Link></li>
     <li className="nav-item"><SignOutButton /></li>
   </ul>
@@ -18,6 +18,7 @@ let NavigationNonAuth = () => (
   <ul className="nav">
     <li className="nav-item"><Link href={routes.LANDING}><a className="nav-link">Landing</a></Link></li>
     <li className="nav-item"><Link href={routes.SIGN_IN}><a className="nav-link">Sign In</a></Link></li>
+    <li className="nav-item"><Link href={routes.SIGN_UP}><a className="nav-link">Sign Up</a></Link></li>
   </ul>
 );
 

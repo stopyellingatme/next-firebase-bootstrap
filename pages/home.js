@@ -6,19 +6,15 @@ import { compose } from 'recompose';
 import initStore from '../src/store';
 import { AppWithAuthorization } from '../src/components/App';
 import { db } from '../src/firebase';
-
-const fromObjectToList = (object) =>
-  object
-    ? Object.keys(object).map(key => ({ ...object[key], index: key }))
-    : [];
+import { fromObjectToList } from '../src/utilities/format'
 
 class HomePage extends Component {
   componentDidMount() {
     const { onSetUsers } = this.props;
 
-    db.onceGetUsers().then(snapshot =>
-      onSetUsers(fromObjectToList(snapshot.val()))
-    );
+    // db.onceGetUsers().then(snapshot =>
+    //   onSetUsers(fromObjectToList(snapshot.val()))
+    // );
   }
 
   render() {
@@ -29,7 +25,7 @@ class HomePage extends Component {
         <h1>Home</h1>
         <p>The Home Page is accessible by every signed in user.</p>
 
-        { !!users.length && <UserList users={users} /> }
+        {!!users.length && <UserList users={users} />}
       </AppWithAuthorization>
     );
   }

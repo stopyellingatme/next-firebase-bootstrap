@@ -8,6 +8,7 @@ import { PasswordForgetLink } from './pw-forget';
 import { AppWithAuthentication } from '../src/components/App';
 import { auth } from '../src/firebase';
 import * as routes from '../src/constants/routes';
+import { updateByPropertyName } from '../src/utilities/format'
 
 const SignInPage = () =>
   <AppWithAuthentication>
@@ -23,9 +24,6 @@ const SignInPage = () =>
     </div>
   </AppWithAuthentication>
 
-const updateByPropertyName = (propertyName, value) => () => ({
-  [propertyName]: value,
-});
 
 const INITIAL_STATE = {
   email: '',

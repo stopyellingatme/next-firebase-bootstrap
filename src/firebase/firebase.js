@@ -5,21 +5,21 @@ require("firebase/firestore");
 
 
 const prodConfig = {
-  apiKey: "AIzaSyBMB0dJqaK4TedsmpLmHptqlBDFXjAWHyQ",
-  authDomain: "test0-abf15.firebaseapp.com",
-  databaseURL: "https://test0-abf15.firebaseio.com",
-  projectId: "test0-abf15",
-  storageBucket: "test0-abf15.appspot.com",
-  messagingSenderId: "964639469440"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 };
 
 const devConfig = {
-  apiKey: "AIzaSyBMB0dJqaK4TedsmpLmHptqlBDFXjAWHyQ",
-  authDomain: "test0-abf15.firebaseapp.com",
-  databaseURL: "https://test0-abf15.firebaseio.com",
-  projectId: "test0-abf15",
-  storageBucket: "test0-abf15.appspot.com",
-  messagingSenderId: "964639469440"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 };
 
 const config = process.env.NODE_ENV === 'production'

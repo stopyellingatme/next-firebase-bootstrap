@@ -10,6 +10,7 @@
   * React + NextJs
   * firebase 4.3.1
   * redux
+  * scss & bootstrap
 * features:
   * Sign In
   * Sign Up
@@ -21,8 +22,6 @@
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/nextjs-redux-firebase-authentication.git`
-* `cd nextjs-redux-firebase-authentication`
 * `npm install`
 * `npm run dev`
 * visit http://localhost:3000/

@@ -1,3 +1,5 @@
+@import './bootstrap.min.css';
+
 html, body {
   height: 100vh !important;
 }
@@ -19,6 +21,10 @@ img {
 .pointer {
     cursor: pointer;
 }
+
+
+
+
 
 .app {
   background: #F3F3F4;
@@ -56,6 +62,33 @@ img {
   margin: auto;
   width: 400px;
 }
+
+.sign-up-form-container {
+  grid-column: 1/5;
+  grid-row: 2/6;
+  margin: auto;
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**

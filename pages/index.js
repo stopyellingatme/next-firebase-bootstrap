@@ -4,9 +4,6 @@ import withRedux from 'next-redux-wrapper';
 import initStore from '../src/store';
 import { AppWithAuthentication } from '../src/components/App';
 import "../styles/style.scss";
-import '../styles/bootstrap.min.css'
-// import 'semantic-ui-css/semantic.min.css';
-// import "../semantic/dist/semantic.min.css";
 
 const LandingPage = () =>
   <AppWithAuthentication>

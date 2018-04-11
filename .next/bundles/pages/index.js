@@ -50197,8 +50197,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_components_App__ = __webpack_require__("./src/components/App/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_style_scss__ = __webpack_require__("./styles/style.scss");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__styles_style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__styles_style_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_bootstrap_min_css__ = __webpack_require__("./styles/bootstrap.min.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_bootstrap_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__styles_bootstrap_min_css__);
 var _jsxFileName = '/Users/taylorking/Documents/Code/obvia_01/pages/index.js';
 
 (function () {
@@ -50214,23 +50212,20 @@ var _jsxFileName = '/Users/taylorking/Documents/Code/obvia_01/pages/index.js';
 
 
 
-// import 'semantic-ui-css/semantic.min.css';
-// import "../semantic/dist/semantic.min.css";
-
 var LandingPage = function LandingPage() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_3__src_components_App__["a" /* AppWithAuthentication */],
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 9
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'landing-page-content', __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 10
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -50238,10 +50233,40 @@ var LandingPage = function LandingPage() {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 14
+            lineNumber: 11
           }
         },
         'Landing Page for everyone, yo...'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          }
+        },
+        'NOT SIGNED IN!!!'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
+          }
+        },
+        'NOT SIGNED IN!!!'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14
+          }
+        },
+        'NOT SIGNED IN!!!'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'p',
@@ -50269,36 +50294,6 @@ var LandingPage = function LandingPage() {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 17
-          }
-        },
-        'NOT SIGNED IN!!!'
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'p',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 18
-          }
-        },
-        'NOT SIGNED IN!!!'
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'p',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 19
-          }
-        },
-        'NOT SIGNED IN!!!'
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'p',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 20
           }
         },
         'NOT SIGNED IN!!!'
@@ -50515,7 +50510,7 @@ var NavigationAuth = function NavigationAuth() {
               lineNumber: 11
             }
           },
-          'Home'
+          'Dashboard'
         )
       )
     ),
@@ -50603,7 +50598,7 @@ var NavigationNonAuth = function NavigationNonAuth() {
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
-        { href: __WEBPACK_IMPORTED_MODULE_3__constants_routes__["e" /* SIGN_IN */], __source: {
+        { href: __WEBPACK_IMPORTED_MODULE_3__constants_routes__["d" /* SIGN_IN */], __source: {
             fileName: _jsxFileName,
             lineNumber: 20
           }
@@ -50616,6 +50611,31 @@ var NavigationNonAuth = function NavigationNonAuth() {
             }
           },
           'Sign In'
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'li',
+      { className: 'nav-item', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_next_link___default.a,
+        { href: __WEBPACK_IMPORTED_MODULE_3__constants_routes__["e" /* SIGN_UP */], __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'a',
+          { className: 'nav-link', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
+          'Sign Up'
         )
       )
     )
@@ -50638,18 +50658,18 @@ var Navigation = function (_Component) {
         'div',
         { className: 'navbar', __source: {
             fileName: _jsxFileName,
-            lineNumber: 31
+            lineNumber: 32
           }
         },
         this.props.authUser ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(NavigationAuth, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 34
           }
         }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(NavigationNonAuth, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 34
+            lineNumber: 35
           }
         })
       );
@@ -50852,7 +50872,7 @@ var withAuthorization = function withAuthorization(needsAuthorization) {
         value: function componentDidMount() {
           __WEBPACK_IMPORTED_MODULE_2__firebase__["c" /* firebase */].auth.onAuthStateChanged(function (authUser) {
             if (!authUser && needsAuthorization) {
-              __WEBPACK_IMPORTED_MODULE_1_next_router___default.a.push(__WEBPACK_IMPORTED_MODULE_3__constants_routes__["e" /* SIGN_IN */]);
+              __WEBPACK_IMPORTED_MODULE_1_next_router___default.a.push(__WEBPACK_IMPORTED_MODULE_3__constants_routes__["d" /* SIGN_IN */]);
             }
           });
         }
@@ -50972,9 +50992,9 @@ var _default = SignOutButton;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return LANDING; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return SIGN_UP; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SIGN_IN; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return PASSWORD_FORGET; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return SIGN_UP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SIGN_IN; });
+/* unused harmony export PASSWORD_FORGET */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return HOME; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ACCOUNT; });
 (function () {
@@ -51445,39 +51465,6 @@ var _default = initStore;
 
 ;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/next/node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
-/***/ "./styles/bootstrap.min.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1523397156270");
-          });
-      }
-    }
-  
 
 /***/ }),
 
